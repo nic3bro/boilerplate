@@ -33,7 +33,7 @@ function catchError(error) {
     this.emit('end'); 
 }
 
-gulp.task('install', ['copy-fonts', 'copy-variables']);
+gulp.task('build', ['copy-fonts', 'copy-variables', 'styles.css', 'scripts.js']);
 
 gulp.task('copy-fonts', function() {  
   return gulp.src(paths.assets.vendor + 'bootstrap/fonts/**')
