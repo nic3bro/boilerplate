@@ -70,7 +70,7 @@ gulp.task('scripts.js', function() {
 });
 
 gulp.task('watch', ['browser-sync'], function() {  
-  gulp.watch(paths.dev.less + '*.less', ['frontend.css', browserSync.reload]);
-  gulp.watch(paths.dev.js + '*.js', ['frontend.js', browserSync.reload]);
+  gulp.watch(paths.dev.less + '*.less', ['styles.css', browserSync.reload]);
+  gulp.watch(paths.dev.js + '*.js', ['scripts.js', browserSync.reload]);
   gulp.watch('*.html', browserSync.reload);
 });
