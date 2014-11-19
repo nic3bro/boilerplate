@@ -1,0 +1,6 @@
+bower_components
+node_modules
+_dev/less/varables.less
+assets/css/*
+assets/js/*
+assets/fonts/*
